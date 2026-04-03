@@ -1,0 +1,127 @@
+/* Base Reset and Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Typography spacing */
+p {
+  margin: 15px 0;
+  color: #4a4a4a;
+}
+
+ul {
+  margin: 15px 0 15px 40px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Styling for the required code tags */
+code {
+  display: block;
+  background-color: #272822;
+  color: #f8f8f2;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+/* Navbar fixed to the left */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px;
+  border-bottom: 2px solid #306998; /* Python blue */
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #ffe873; /* Python yellow */
+  color: #333;
+}
+
+/* Main Document positioned to the right of the navbar */
+#main-doc {
+  margin-left: 300px;
+  padding: 40px 50px;
+  max-width: 1000px;
+}
+
+.main-section {
+  margin-bottom: 60px;
+}
+
+.main-section header {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #306998;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Media Query for mobile devices (Required Test #22) */
+@media screen and (max-width: 768px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 3px solid #306998;
+  }
+  
+  #navbar ul {
+    max-height: 250px;
+    overflow-y: auto;
+    border-bottom: none;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 25px;
+  }
+}

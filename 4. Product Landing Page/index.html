@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reactify - The Ultimate UI Toolkit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="logo">
+      <img 
+        id="header-img" 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" 
+        alt="Reactify Logo"
+      >
+      <span class="logo-text">Reactify</span>
+    </div>
+    
+    <nav id="nav-bar">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Build Better User Interfaces, Faster.</h2>
+      <p>Join over 100,000 developers building the future of the web.</p>
+      
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email address" 
+          required 
+        />
+        <input type="submit" id="submit" value="Get Started" class="btn" />
+      </form>
+    </section>
+
+    <div class="container">
+      <section id="features">
+        <div class="feature">
+          <div class="icon">🚀</div>
+          <div class="desc">
+            <h3>Blazing Fast</h3>
+            <p>Our optimized components ensure your application runs smoothly without any rendering bottlenecks.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="icon">🛡️</div>
+          <div class="desc">
+            <h3>Type Safe</h3>
+            <p>Built completely in TypeScript to guarantee stability, autocomplete, and a superior developer experience.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="icon">🎨</div>
+          <div class="desc">
+            <h3>Highly Customizable</h3>
+            <p>Override default styles effortlessly with our powerful CSS variable theming engine.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="video-container">
+          <iframe 
+            id="video" 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="card">
+          <div class="card-header">Starter</div>
+          <h2>Free</h2>
+          <ol>
+            <li>Basic Components</li>
+            <li>Community Support</li>
+            <li>1 Project</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">Pro</div>
+          <h2>$29<span>/mo</span></h2>
+          <ol>
+            <li>Advanced Components</li>
+            <li>Priority Email Support</li>
+            <li>Unlimited Projects</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">Enterprise</div>
+          <h2>$99<span>/mo</span></h2>
+          <ol>
+            <li>Custom Theming</li>
+            <li>24/7 Phone Support</li>
+            <li>Dedicated Server</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p>&copy; 2026 Reactify UI Components</p>
+  </footer>
+
+</body>
+</html>

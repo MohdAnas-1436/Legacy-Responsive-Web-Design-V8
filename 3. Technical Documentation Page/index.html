@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Basics Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Python Basics</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+      <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a high-level, interpreted programming language known for its readability and simplicity. It was created by Guido van Rossum and first released in 1991.</p>
+      <p>Because of its English-like syntax, Python is widely considered one of the best programming languages for beginners. To print a simple statement to the screen, you use the print function:</p>
+      <code>print("Hello, World!")</code>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values. Unlike other languages, Python has no command for declaring a variable.</p>
+      <p>A variable is created the moment you first assign a value to it. You do not need to declare its type ahead of time.</p>
+      <code>x = 5<br>y = "John"</code>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <p>In programming, data type is an important concept. Variables can store data of different types, and different types can do different things.</p>
+      <p>Here are some of the most common built-in data types in Python:</p>
+      <ul>
+        <li><strong>Text Type:</strong> str</li>
+        <li><strong>Numeric Types:</strong> int, float, complex</li>
+        <li><strong>Sequence Types:</strong> list, tuple, range</li>
+        <li><strong>Mapping Type:</strong> dict</li>
+        <li><strong>Boolean Type:</strong> bool</li>
+      </ul>
+      <p>You can get the data type of any object by using the type() function:</p>
+      <code>print(type(5))</code>
+      <code>print(type("Hello"))</code>
+    </section>
+
+    <section class="main-section" id="Control_Flow">
+      <header>Control Flow</header>
+      <p>Python supports the usual logical conditions from mathematics (e.g., equals, not equals, less than, greater than). These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+      <p>An "if statement" is written by using the if keyword. Note that Python relies on indentation (whitespace at the beginning of a line) to define scope in the code.</p>
+      <code>
+        a = 33<br>
+        b = 200<br>
+        if b > a:<br>
+        &nbsp;&nbsp;print("b is greater than a")
+      </code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+      <p>In Python, a function is defined using the def keyword. To call a function, use the function name followed by parenthesis.</p>
+      <code>
+        def my_function():<br>
+        &nbsp;&nbsp;print("Hello from a function")<br><br>
+        my_function()
+      </code>
+    </section>
+  </main>
+
+</body>
+</html>
